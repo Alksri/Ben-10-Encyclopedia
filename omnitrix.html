@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Omnitrix // Ben 10 Omniverse Protocol</title>
+  <meta name="description" content="Inspect every Omnitrix mark — prototype, recalibrated, Ultimatrix and the Omniverse watch — with a 3D interactive dial and selectable alien samples.">
+  <meta name="theme-color" content="#050806">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script>try{if(sessionStorage.getItem('b10-warp'))document.documentElement.classList.add('warping');}catch(e){}</script>
+  <noscript><style>html.warping body{opacity:1!important}</style></noscript>
+</head>
+<body data-page="omnitrix" data-root="">
+
+<main id="main">
+  <section class="page-hero">
+    <span class="page-hero__ghost" aria-hidden="true">Omnitrix</span>
+    <div class="shell page-hero__grid">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-warp="Home">Home</a><i></i><b>The Omnitrix</b>
+        </nav>
+        <span class="eyebrow">Device file // wrist-mounted</span>
+        <h1 class="page-title" style="margin-top:16px">The<br><span class="accent">Omnitrix.</span></h1>
+        <p class="page-hero__lead">
+          Four marks, one lineage, fifty-five-plus samples. Turn the dial, pick a form and slam it.
+          The 3D view is interactive — drag your cursor across the watch to tilt it, then open the
+          exploded layer stack.
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <div class="page-hero__stats">
+          <div class="page-hero__stat"><span>Watch marks</span><b>04</b></div>
+          <div class="page-hero__stat"><span>Selectable samples</span><b>10</b></div>
+          <div class="page-hero__stat"><span>Indexed forms</span><b>55<em>+</em></b></div>
+          <div class="page-hero__stat"><span>Core status</span><b style="color:var(--green)">Stable</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lab-section" id="lab">
+    <div class="shell">
+      <div class="mode-tabs" id="mode-tabs" aria-label="Select watch mark"></div>
+
+      <div class="lab">
+        <div class="lab__list" id="lab-list" aria-label="Alien samples"></div>
+        <div class="lab__stage" id="lab-stage"></div>
+        <div class="lab__panel" id="lab-panel"></div>
+      </div>
+
+      <div class="lab-modes" id="lab-modes"></div>
+
+      <div class="lab-specs">
+        <div class="lab-spec"><span>DNA storage</span><b>55+ samples</b></div>
+        <div class="lab-spec"><span>Interface</span><b>Holo-dial</b></div>
+        <div class="lab-spec"><span>Power source</span><b>Self-repairing core</b></div>
+        <div class="lab-spec"><span>Mount</span><b>Left wrist</b></div>
+      </div>
+
+      <div class="between" style="margin-top:40px;flex-wrap:wrap;gap:16px">
+        <span class="mono" style="color:var(--muted-2)">Device simulation // fan-made interpretation</span>
+        <a class="link-arrow" href="universe.html" data-warp="Universe">See the full watch timeline
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="cta reveal">
+        <span class="cta__corner cta__corner--tl"></span>
+        <span class="cta__corner cta__corner--tr"></span>
+        <span class="cta__corner cta__corner--bl"></span>
+        <span class="cta__corner cta__corner--br"></span>
+        <div class="cta__inner">
+          <span class="eyebrow">Ready when you are</span>
+          <h2 class="display" style="margin-top:14px">Pick a form. <span class="outline">Slam it.</span></h2>
+          <p>Ten full dossiers are waiting. Or open the universal search and find every alien from every era.</p>
+          <div class="cta__actions">
+            <a class="btn btn--solid" href="aliens.html" data-warp="Alien Archive"><span>Open the archive</span></a>
+            <a class="btn btn--ghost" href="search.html" data-warp="Search"><span>Search all forms</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/photos.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/render-pages.js"></script>
+</body>
+</html>

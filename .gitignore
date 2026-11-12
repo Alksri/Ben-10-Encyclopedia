@@ -1,0 +1,16 @@
+# temp / scratch
+tools/_*.py
+tools/_fetch_*.log
+docs/preview/
+image_cache.json
+*.pyc
+__pycache__/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# editor
+.vscode/
+.idea/

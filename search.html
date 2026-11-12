@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Universal Search // Ben 10 Omniverse Protocol</title>
+  <meta name="description" content="Search every Ben 10 alien across the original series, Alien Force, Ultimate Alien, Omniverse and the reboot. Fuzzy matching handles typos and misspellings.">
+  <meta name="theme-color" content="#050806">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script>try{if(sessionStorage.getItem('b10-warp'))document.documentElement.classList.add('warping');}catch(e){}</script>
+  <noscript><style>html.warping body{opacity:1!important}</style></noscript>
+</head>
+<body data-page="search" data-root="">
+
+<main id="main">
+  <section class="search-hero">
+    <div class="shell search-hero__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" data-warp="Home">Home</a><i></i><b>Universal search</b>
+      </nav>
+      <span class="eyebrow">DNA matcher // all eras</span>
+      <h1 class="search-title" style="margin-top:16px">Find <span class="accent">any</span> form.</h1>
+      <p class="page-hero__lead">
+        Every alien from the original series, Alien Force, Ultimate Alien, Omniverse and the reboot —
+        searchable by name, species, planet or series. Typos are fine; the matcher will still find the signal.
+      </p>
+
+      <div class="search-box">
+        <svg class="search-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <input id="search-input" type="text" placeholder="Try “forearms”, “humungousaur”, “Petropia”…" autocomplete="off" spellcheck="false" aria-label="Search all aliens">
+        <button class="search-box__clear" id="search-clear" type="button" aria-label="Clear search">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="m3 3 10 10M13 3 3 13"/></svg>
+        </button>
+      </div>
+
+      <div class="search-hints">
+        <span>Try</span>
+        <button class="sr-chip" type="button" data-search-query="Heatblast">Heatblast</button>
+        <button class="sr-chip" type="button" data-search-query="Four Arms">Four Arms</button>
+        <button class="sr-chip" type="button" data-search-query="Ultimate">Ultimate forms</button>
+        <button class="sr-chip" type="button" data-search-query="Alien X">Alien X</button>
+        <button class="sr-chip" type="button" data-search-query="forearms">forearms (typo)</button>
+        <button class="sr-chip" type="button" data-search-query="Omnitrix">Omnitrix</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell search-layout">
+    <section aria-label="Search results">
+      <div class="search-results__head">
+        <span class="search-results__title" id="search-count">Featured signals</span>
+        <span class="mono" style="color:var(--muted-2)">Fuzzy match on</span>
+      </div>
+      <div id="search-results" aria-live="polite"></div>
+    </section>
+
+    <aside class="search-side">
+      <div>
+        <h4>Recent signals</h4>
+        <ul id="search-recent"></ul>
+      </div>
+      <div>
+        <h4>Quick filters</h4>
+        <ul>
+          <li><button type="button" data-search-query="Heatblast"><span>Original series</span><small>10</small></button></li>
+          <li><button type="button" data-search-query="Swampfire"><span>Alien Force</span><small>10</small></button></li>
+          <li><button type="button" data-search-query="Ultimate"><span>Ultimate forms</span><small>08</small></button></li>
+          <li><button type="button" data-search-query="Feedback"><span>Omniverse</span><small>08</small></button></li>
+          <li><button type="button" data-search-query="Gax"><span>Reboot</span><small>04</small></button></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Can’t find it?</h4>
+        <ul>
+          <li><a href="aliens.html" data-warp="Alien Archive"><span>Browse the ten dossiers</span><small>↗</small></a></li>
+          <li><a href="404.html" data-warp="Signal lost"><span>Open 404 protocol</span><small>↗</small></a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/photos.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/render-pages.js"></script>
+</body>
+</html>

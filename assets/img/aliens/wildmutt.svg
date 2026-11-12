@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Original stylized portrait of Wildmutt, a blind Vulpimancer beast with fangs and sensory gills">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="68%">
+      <stop offset="0" stop-color="#35200a"/><stop offset=".5" stop-color="#120d06"/><stop offset="1" stop-color="#050706"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb43f"/><stop offset=".4" stop-color="#e07d16"/><stop offset=".75" stop-color="#a04c0c"/><stop offset="1" stop-color="#5a2705"/>
+    </linearGradient>
+    <linearGradient id="furDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b65a0e"/><stop offset="1" stop-color="#4e2004"/>
+    </linearGradient>
+    <linearGradient id="mouth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a1008"/><stop offset="1" stop-color="#1c0604"/>
+    </linearGradient>
+    <radialGradient id="sensor" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff0b0"/><stop offset=".5" stop-color="#ff9f1c" stop-opacity=".7"/><stop offset="1" stop-color="#ff9f1c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <g stroke="#ff9f1c" stroke-width="1" opacity=".07"><path d="M0 620h800M0 710h800M120 0v800M680 0v800"/></g>
+  <ellipse cx="400" cy="420" rx="290" ry="280" fill="#ff9f1c" opacity=".12" filter="url(#soft)"/>
+
+  <!-- shoulders / mane -->
+  <path d="M180 800c10-130 54-206 140-236l80-20 80 20c86 30 130 106 140 236Z" fill="url(#furDark)"/>
+  <path d="M180 800c10-130 54-206 140-236l20-5c-46 70-62 152-60 241Z" fill="#3a1603" opacity=".6"/>
+  <path d="M620 800c-10-130-54-206-140-236l-20-5c46 70 62 152 60 241Z" fill="#3a1603" opacity=".45"/>
+
+  <!-- spiky fur silhouette -->
+  <g fill="url(#fur)">
+    <path d="M232 574l-40-42 58-8-30-54 62 16-12-58 52 34 8-52 42 44 20-46 34 52 30-40 14 54 48-30 4 56 56-8-24 56 60 12-46 40Z"/>
+  </g>
+
+  <!-- chest / ribs -->
+  <path d="M320 650c50 26 110 26 160 0l-10 80c-46 18-94 18-140 0Z" fill="#5a2705" opacity=".55"/>
+  <g stroke="#ffb43f" stroke-width="4" fill="none" opacity=".3">
+    <path d="M346 676c34 12 74 12 108 0M342 704c38 14 78 14 116 0"/>
+  </g>
+
+  <!-- neck -->
+  <path d="M340 400h120v108H340Z" fill="url(#furDark)"/>
+
+  <!-- head -->
+  <path d="M400 140c-92 0-152 58-152 136 0 54 22 96 62 122l90 58 90-58c40-26 62-68 62-122 0-78-60-136-152-136Z" fill="url(#fur)"/>
+  <path d="M400 156c-78 0-136 48-136 120 16-48 66-76 136-76 34 0 62 8 84 24-18-40-46-68-84-68Z" fill="#ffd89a" opacity=".2"/>
+
+  <!-- ears / gill flaps -->
+  <path d="M272 216c-40-14-76-4-96 26 26 26 64 40 104 32Z" fill="url(#furDark)"/>
+  <path d="M528 216c40-14 76-4 96 26-26 26-64 40-104 32Z" fill="url(#furDark)"/>
+  <g stroke="#ffb43f" stroke-width="3" fill="none" opacity=".45">
+    <path d="M196 232c28 6 52 16 72 30M604 232c-28 6-52 16-72 30"/>
+  </g>
+
+  <!-- brow (no eyes) -->
+  <path d="M296 286c34-16 68-14 104 6 36-20 70-22 104-6l-16 34-88-14-88 14Z" fill="#7a3407" opacity=".9"/>
+  <g fill="none" stroke="#4e2004" stroke-width="4" opacity=".7">
+    <path d="M312 320c18-10 38-10 56 0M432 320c18-10 38-10 56 0"/>
+  </g>
+
+  <!-- nose -->
+  <path d="M400 330c-26 0-44 14-44 34 0 20 18 32 44 32s44-12 44-32c0-20-18-34-44-34Z" fill="#3a1603"/>
+  <path d="M380 348c-10 0-18 4-18 10M420 348c10 0 18 4 18 10" stroke="#1c0604" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M400 352v22" stroke="#1c0604" stroke-width="4"/>
+
+  <!-- huge mouth -->
+  <path d="M292 384c36 22 72 30 108 30s72-8 108-30c-12 76-54 116-108 116s-96-40-108-116Z" fill="url(#mouth)"/>
+  <path d="M292 384c36 22 72 30 108 30s72-8 108-30" stroke="#ffb43f" stroke-width="5" fill="none" opacity=".5"/>
+
+  <!-- fangs -->
+  <g fill="#fff6e2">
+    <path d="M316 392l18 46 16-38Z"/><path d="M354 402l16 52 16-46Z"/>
+    <path d="M400 408l16 58 16-58Z"/>
+    <path d="M446 402l-16 46 16-52Z"/><path d="M484 392l-16 38-18-46Z"/>
+  </g>
+  <g fill="#fff6e2" opacity=".9">
+    <path d="M332 478l14-40 16 44Z"/><path d="M372 490l14-46 16 50Z"/>
+    <path d="M414 490l16-50 14 46Z"/><path d="M454 478l16-44 14 40Z"/>
+  </g>
+  <path d="M356 500c30 16 58 16 88 0-14 22-30 32-44 32s-30-10-44-32Z" fill="#c14a2a" opacity=".55"/>
+
+  <!-- sensory pulse rings -->
+  <g fill="none" stroke="#ff9f1c" opacity=".35">
+    <circle cx="400" cy="330" r="130"/><circle cx="400" cy="330" r="180" stroke-dasharray="4 10"/>
+    <circle cx="400" cy="330" r="230" stroke-dasharray="2 14" opacity=".2"/>
+  </g>
+  <g fill="#ffd89a" opacity=".7">
+    <circle cx="172" cy="300" r="3"/><circle cx="640" cy="380" r="4"/><circle cx="606" cy="210" r="2.5"/>
+  </g>
+</svg>

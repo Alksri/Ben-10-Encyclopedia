@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Original stylized portrait of Heatblast, a Pyronite made of volcanic rock and living flame">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="66%">
+      <stop offset="0" stop-color="#3a1608"/><stop offset=".5" stop-color="#120a06"/><stop offset="1" stop-color="#050706"/>
+    </radialGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a3125"/><stop offset=".55" stop-color="#2c1813"/><stop offset="1" stop-color="#150c09"/>
+    </linearGradient>
+    <linearGradient id="lava" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/><stop offset=".45" stop-color="#ff8a2b"/><stop offset="1" stop-color="#e02f12"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff4d12"/><stop offset=".45" stop-color="#ff9c22"/><stop offset="1" stop-color="#ffe89a"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="62%" r="50%">
+      <stop offset="0" stop-color="#fff6cf"/><stop offset=".5" stop-color="#ffc247"/><stop offset="1" stop-color="#ff6a1a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <g stroke="#ff8a2b" stroke-width="1" opacity=".07">
+    <path d="M0 620h800M0 700h800M0 540h800M120 0v800M680 0v800"/>
+  </g>
+  <ellipse cx="400" cy="430" rx="250" ry="250" fill="#ff6a1a" opacity=".13" filter="url(#soft)"/>
+
+  <g filter="url(#glow)" opacity=".8">
+    <path d="M400 96c22 52 8 74 34 96 20 17 34-12 40 16 7 34-26 50-8 74 22 30 56 6 62 40 6 32-38 40-30 72 8 34 52 34 46 70-6 40-58 42-58 78 0 30 34 40 28 70-8 40-70 40-114 40s-106 0-114-40c-6-30 28-40 28-70 0-36-52-38-58-78-6-36 38-36 46-70 8-32-36-40-30-72 6-34 40-10 62-40 18-24-15-40-8-74 6-28 20 1 40-16 26-22 12-44 34-96Z" fill="url(#flame)" opacity=".55"/>
+  </g>
+
+  <!-- shoulders -->
+  <path d="M148 800c6-132 58-206 152-236l100-34 100 34c94 30 146 104 152 236Z" fill="url(#rock)"/>
+  <path d="M148 800c6-132 58-206 152-236l34-12c-40 66-52 148-48 248Z" fill="#0d0806" opacity=".55"/>
+  <path d="M652 800c-6-132-58-206-152-236l-34-12c40 66 52 148 48 248Z" fill="#0d0806" opacity=".45"/>
+  <path d="M246 596c34-26 74-42 118-48M554 596c-34-26-74-42-118-48" stroke="#ff7a26" stroke-width="7" fill="none" opacity=".65"/>
+  <path d="M300 676l44 30-26 44 60 50M500 664l-40 34 28 40-54 62M392 700l22 34-18 66" stroke="#ff5a1c" stroke-width="6" fill="none" opacity=".55"/>
+
+  <!-- neck / collar -->
+  <path d="M330 470h140l22 96H308Z" fill="#24120d"/>
+  <path d="M330 486h140" stroke="#ff8a2b" stroke-width="5" opacity=".5"/>
+
+  <!-- head flame silhouette -->
+  <path d="M400 150c18 40 6 58 28 74 18 13 30-10 36 12 6 26-22 40-6 60 18 24 46 4 52 32 5 26-32 32-24 58 6 26 42 26 38 56-4 32-48 34-48 62 0 24 28 32 22 56-6 32-56 32-98 32s-92 0-98-32c-6-24 22-32 22-56 0-28-44-30-48-62-4-30 32-30 38-56 8-26-29-32-24-58 6-28 34-8 52-32 16-20-12-34-6-60 6-22 18 1 36-12 22-16 10-34 28-74Z" fill="url(#flame)"/>
+  <path d="M400 236c10 26 4 38 18 48 12 9 20-6 24 8 4 18-14 26-4 40 12 16 30 2 34 20 4 18-20 20-16 38 4 18 28 18 24 38-2 20-30 22-30 42 0 16 18 22 14 38-4 20-36 22-64 22s-60-2-64-22c-4-16 14-22 14-38 0-20-28-22-30-42-4-20 20-20 24-38 4-18-20-20-16-38 4-18 22-4 34-20 10-14-8-22-4-40 4-14 12 1 24-8 14-10 8-22 18-48Z" fill="url(#lava)" opacity=".92"/>
+  <ellipse cx="400" cy="420" rx="86" ry="110" fill="url(#core)" opacity=".55"/>
+
+  <!-- eyes -->
+  <g fill="#fffbe6">
+    <path d="M330 356c26-10 46-6 54 6-20 12-44 12-54-6Z"/>
+    <path d="M470 356c-26-10-46-6-54 6 20 12 44 12 54-6Z"/>
+  </g>
+  <g fill="#ff7a1a">
+    <path d="M342 356c14-4 26-2 32 4-12 6-26 6-32-4Z"/>
+    <path d="M458 356c-14-4-26-2-32 4 12 6 26 6 32-4Z"/>
+  </g>
+  <path d="M356 452c28 14 60 14 88 0" stroke="#7a2a10" stroke-width="7" fill="none" stroke-linecap="round" opacity=".8"/>
+
+  <!-- embers -->
+  <g fill="#ffb347">
+    <circle cx="222" cy="300" r="4" opacity=".8"/><circle cx="596" cy="262" r="3" opacity=".7"/>
+    <circle cx="652" cy="430" r="5" opacity=".55"/><circle cx="166" cy="470" r="3" opacity=".6"/>
+    <circle cx="270" cy="196" r="2.5" opacity=".7"/><circle cx="548" cy="176" r="2" opacity=".8"/>
+  </g>
+  <rect width="800" height="800" fill="url(#bg)" opacity="0"/>
+</svg>

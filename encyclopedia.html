@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encyclopedia // Ben 10 Omniverse Protocol</title>
+  <meta name="description" content="The full Ben 10 universe encyclopedia — characters, home worlds, factions, devices, series and a complete glossary, searchable in one place.">
+  <meta name="theme-color" content="#050806">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script>try{if(sessionStorage.getItem('b10-warp'))document.documentElement.classList.add('warping');}catch(e){}</script>
+  <noscript><style>html.warping body{opacity:1!important}</style></noscript>
+</head>
+<body data-page="encyclopedia" data-root="">
+
+<main id="main">
+  <section class="page-hero">
+    <span class="page-hero__ghost" aria-hidden="true">Codex</span>
+    <div class="shell page-hero__grid">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-warp="Home">Home</a><i></i><b>Encyclopedia</b>
+        </nav>
+        <span class="eyebrow">Plumber codex // complete universe index</span>
+        <h1 class="page-title" style="margin-top:16px">The whole<br><span class="accent">Omniverse.</span></h1>
+        <p class="page-hero__lead">
+          Every character, world, faction, device and piece of jargon that makes the Ben 10
+          universe run. One searchable codex, written as a field guide rather than a wiki dump.
+          Filter by category or scan for a name.
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <div class="page-hero__stats">
+          <div class="page-hero__stat"><span>Codex entries</span><b id="enc-hero-count">00</b></div>
+          <div class="page-hero__stat"><span>Characters</span><b>16</b></div>
+          <div class="page-hero__stat"><span>Worlds</span><b>16</b></div>
+          <div class="page-hero__stat"><span>Glossary terms</span><b>32</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toolbar toolbar--enc">
+    <div class="shell toolbar__inner">
+      <div class="filters" id="enc-tabs" aria-label="Filter encyclopedia"></div>
+      <label class="toolbar__search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <input id="enc-input" type="text" placeholder="Search the codex…" autocomplete="off" aria-label="Search encyclopedia">
+      </label>
+      <span class="archive-count" id="enc-count"><b>00</b> entries</span>
+    </div>
+  </div>
+
+  <section class="archive-section enc-section">
+    <div class="shell">
+      <div class="enc-grid" id="enc-grid"></div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="cta reveal">
+        <span class="cta__corner cta__corner--tl"></span>
+        <span class="cta__corner cta__corner--tr"></span>
+        <span class="cta__corner cta__corner--bl"></span>
+        <span class="cta__corner cta__corner--br"></span>
+        <div class="cta__inner">
+          <span class="eyebrow">From lore to loadout</span>
+          <h2 class="display" style="margin-top:14px">Read it. Then <span class="outline">wear it.</span></h2>
+          <p>The codex explains the universe. The archive lets you become part of it. Ten full dossiers are one dial away.</p>
+          <div class="cta__actions">
+            <a class="btn btn--solid" href="aliens.html" data-warp="Alien Archive"><span>Open the archive</span></a>
+            <a class="btn btn--ghost" href="universe.html" data-warp="Universe"><span>See the timeline</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/lore.js"></script>
+<script src="assets/js/photos.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/render-pages.js"></script>
+</body>
+</html>

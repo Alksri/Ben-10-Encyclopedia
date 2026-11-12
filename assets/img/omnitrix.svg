@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Original detailed Omnitrix device render">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#0b1409"/><stop offset="1" stop-color="#030503"/>
+    </radialGradient>
+    <radialGradient id="case" cx="36%" cy="26%" r="78%">
+      <stop offset="0" stop-color="#3d4a3a"/><stop offset=".35" stop-color="#1a2319"/><stop offset=".72" stop-color="#0b110a"/><stop offset="1" stop-color="#050805"/>
+    </radialGradient>
+    <linearGradient id="bezel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26351f"/><stop offset=".35" stop-color="#0d160b"/><stop offset=".65" stop-color="#111c0e"/><stop offset="1" stop-color="#050805"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6ffb8"/><stop offset=".28" stop-color="#a3ff12"/><stop offset=".7" stop-color="#57c400"/><stop offset="1" stop-color="#2c6b00"/>
+    </linearGradient>
+    <linearGradient id="greenDim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fe60b"/><stop offset="1" stop-color="#2f6f00"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#f2ffd6"/><stop offset=".35" stop-color="#a3ff12"/><stop offset=".75" stop-color="#3d8a00"/><stop offset="1" stop-color="#0b1c00"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".28"/><stop offset=".35" stop-color="#ffffff" stop-opacity="0"/><stop offset=".7" stop-color="#a3ff12" stop-opacity=".05"/><stop offset="1" stop-color="#a3ff12" stop-opacity=".14"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="inner" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="300" fill="#a3ff12" opacity=".1" filter="url(#soft)"/>
+
+  <!-- strap hints -->
+  <path d="M64 290c-18 74-18 146 0 220l78-26c-14-56-14-112 0-168Z" fill="#0a0d09" stroke="#1d2a1a" stroke-width="3"/>
+  <path d="M736 290c18 74 18 146 0 220l-78-26c14-56 14-112 0-168Z" fill="#0a0d09" stroke="#1d2a1a" stroke-width="3"/>
+  <g stroke="#26351f" stroke-width="2" opacity=".7">
+    <path d="M76 320l58-18M76 360l58-18M76 400l58-18M76 440l58-18M76 480l58-18"/>
+    <path d="M724 320l-58-18M724 360l-58-18M724 400l-58-18M724 440l-58-18M724 480l-58-18"/>
+  </g>
+
+  <!-- outer casing -->
+  <circle cx="400" cy="400" r="330" fill="url(#case)" stroke="#0a1008" stroke-width="6"/>
+  <circle cx="400" cy="400" r="316" fill="none" stroke="#a3ff12" stroke-width="2" opacity=".22"/>
+  <circle cx="400" cy="400" r="300" fill="none" stroke="#000" stroke-width="10" opacity=".55"/>
+
+  <!-- tick ring -->
+  <g stroke="#a3ff12" stroke-width="3" opacity=".5">
+    <path d="M400 96v18M400 686v18M96 400h18M686 400h18"/>
+    <path d="M185 185l13 13M602 602l13 13M615 185l-13 13M198 602l-13 13"/>
+  </g>
+  <circle cx="400" cy="400" r="282" fill="none" stroke="#a3ff12" stroke-width="1" stroke-dasharray="2 10" opacity=".35"/>
+
+  <!-- screws -->
+  <g fill="#0a0f08" stroke="#3c4d35" stroke-width="2">
+    <circle cx="400" cy="132" r="13"/><circle cx="400" cy="668" r="13"/>
+    <circle cx="132" cy="400" r="13"/><circle cx="668" cy="400" r="13"/>
+  </g>
+  <g stroke="#5c7350" stroke-width="2" opacity=".7">
+    <path d="M394 132h12M400 126v12M394 668h12M400 662v12M132 394v12M126 400h12M668 394v12M662 400h12"/>
+  </g>
+
+  <!-- bezel -->
+  <circle cx="400" cy="400" r="264" fill="url(#bezel)" stroke="#26351f" stroke-width="4" filter="url(#inner)"/>
+  <circle cx="400" cy="400" r="244" fill="none" stroke="#a3ff12" stroke-width="1.5" opacity=".18"/>
+  <circle cx="400" cy="400" r="232" fill="#050805" stroke="#0e170c" stroke-width="8"/>
+
+  <!-- green ring segments -->
+  <g fill="none" stroke="url(#green)" stroke-linecap="round" opacity=".85">
+    <path d="M400 168a232 232 0 0 1 164 68" stroke-width="6"/>
+    <path d="M400 632a232 232 0 0 1-164-68" stroke-width="6"/>
+    <path d="M168 400a232 232 0 0 1 68-164" stroke-width="3" opacity=".5"/>
+    <path d="M632 400a232 232 0 0 1-68 164" stroke-width="3" opacity=".5"/>
+  </g>
+
+  <!-- inner dial -->
+  <circle cx="400" cy="400" r="206" fill="#070c06" stroke="#172413" stroke-width="3"/>
+  <circle cx="400" cy="400" r="186" fill="none" stroke="#a3ff12" stroke-width="1" opacity=".16"/>
+
+  <!-- hourglass -->
+  <g filter="url(#glow)">
+    <path d="M330 282h140l-62 118 62 118H330l62-118Z" fill="url(#green)"/>
+  </g>
+  <path d="M330 282h140l-62 118 62 118H330l62-118Z" fill="none" stroke="#eaffc0" stroke-width="2" opacity=".5"/>
+  <path d="M352 300h96l-42 100Z" fill="#f4ffdc" opacity=".28"/>
+  <path d="M352 500h96l-48-100Z" fill="#0b1c00" opacity=".35"/>
+  <circle cx="400" cy="400" r="52" fill="url(#core)" opacity=".9"/>
+  <circle cx="400" cy="400" r="26" fill="#071006"/>
+  <circle cx="400" cy="400" r="13" fill="url(#green)"/>
+  <circle cx="394" cy="394" r="4" fill="#f4ffdc" opacity=".9"/>
+
+  <!-- glass -->
+  <circle cx="400" cy="400" r="206" fill="url(#glass)" opacity=".55"/>
+  <path d="M250 300a186 186 0 0 1 138-94" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity=".1"/>
+  <path d="M548 512a186 186 0 0 1-70 56" fill="none" stroke="#a3ff12" stroke-width="6" stroke-linecap="round" opacity=".18"/>
+
+  <!-- status pips -->
+  <g fill="#a3ff12" opacity=".8">
+    <circle cx="400" cy="212" r="4"/><circle cx="400" cy="588" r="4"/>
+    <circle cx="212" cy="400" r="4"/><circle cx="588" cy="400" r="4"/>
+  </g>
+
+  <!-- corner brackets -->
+  <g fill="none" stroke="#a3ff12" stroke-width="2" opacity=".35">
+    <path d="M120 220V120h100M580 120h100v100M680 580v100H580M220 680H120V580"/>
+  </g>
+</svg>

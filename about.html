@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About the Build // Ben 10 Omniverse Protocol</title>
+  <meta name="description" content="The design system, motion language and build notes behind Omniverse Protocol — a fan-made Ben 10 UI/UX prototype built with HTML, CSS and vanilla JavaScript.">
+  <meta name="theme-color" content="#050806">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script>try{if(sessionStorage.getItem('b10-warp'))document.documentElement.classList.add('warping');}catch(e){}</script>
+  <noscript><style>html.warping body{opacity:1!important}</style></noscript>
+</head>
+<body data-page="about" data-root="">
+
+<main id="main">
+  <section class="page-hero">
+    <span class="page-hero__ghost" aria-hidden="true">About</span>
+    <div class="shell page-hero__grid">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-warp="Home">Home</a><i></i><b>About the build</b>
+        </nav>
+        <span class="eyebrow">Project file // design system</span>
+        <h1 class="page-title" style="margin-top:16px">Built like a<br><span class="accent">transformation.</span></h1>
+        <p class="page-hero__lead">
+          Omniverse Protocol is a complete fan-made UI/UX prototype: a reusable design language,
+          ten full alien dossiers, a 3D Omnitrix lab, fuzzy universal search and a themed 404.
+          No frameworks. No build step. One shared system.
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <div class="page-hero__stats">
+          <div class="page-hero__stat"><span>Core pages</span><b>07</b></div>
+          <div class="page-hero__stat"><span>Alien dossiers</span><b>10</b></div>
+          <div class="page-hero__stat"><span>Forms indexed</span><b>55<em>+</em></b></div>
+          <div class="page-hero__stat"><span>Dependencies</span><b>0</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="design">
+    <div class="shell about-grid">
+      <div>
+        <span class="eyebrow">The concept</span>
+        <p class="about-lead" style="margin-top:16px">
+          A database that behaves like a <span class="accent">device</span>. Every interaction
+          should feel like the watch responding to a wrist.
+        </p>
+        <div class="about-copy">
+          <p>
+            The visual direction is “Plumber field terminal”: near-black surfaces, acid-green signal,
+            sharp panels, mono telemetry labels and one loud accent per alien. The Omnitrix hourglass
+            is the only logo. Type is chunky display, functional mono, readable body.
+          </p>
+          <p>
+            Motion is functional, not decorative. Internal links trigger a warp overlay with the
+            destination form’s name. Alien pages arrive with a transformation sequence. Cards expose
+            their stats on hover. The 404 glitches because the signal is lost — not because glitch is
+            trendy.
+          </p>
+          <p>
+            Everything is progressive: the site works from the filesystem, search handles typos with
+            Levenshtein matching, and the whole motion layer disables under
+            <span class="mono">prefers-reduced-motion</span>.
+          </p>
+        </div>
+
+        <div class="spec-table">
+          <div class="spec-row"><span>Stack</span><b>HTML5 · CSS3 · Vanilla JS</b></div>
+          <div class="spec-row"><span>Pages</span><b>7 core + 10 alien dossiers + 404</b></div>
+          <div class="spec-row"><span>Data</span><b>55+ indexed forms · 10 full dossiers</b></div>
+          <div class="spec-row"><span>Motion</span><b>CSS 3D · Canvas · IntersectionObserver</b></div>
+          <div class="spec-row"><span>Search</span><b>Fuzzy Levenshtein + alias matching</b></div>
+          <div class="spec-row"><span>Hosting</span><b>Any static host · local Node server included</b></div>
+        </div>
+
+        <div class="about-note">
+          <b>Fan project notice.</b> This is a non-commercial UI/UX concept made for a hackathon.
+          Ben 10 and all related characters are the property of Cartoon Network / Warner Bros.
+          Discovery. No official assets are used; all artwork is original SVG and CSS.
+        </div>
+      </div>
+
+      <div>
+        <span class="eyebrow">Design tokens</span>
+        <div class="swatches">
+          <div class="swatch"><i style="background:#050806"></i><span>Void #050806</span></div>
+          <div class="swatch"><i style="background:#0a110c"></i><span>Panel #0A110C</span></div>
+          <div class="swatch"><i style="background:#a3ff12"></i><span>Signal #A3FF12</span></div>
+          <div class="swatch"><i style="background:#edf5ea"></i><span>Ink #EDF5EA</span></div>
+          <div class="swatch"><i style="background:#ff6a2c"></i><span>Pyro #FF6A2C</span></div>
+          <div class="swatch"><i style="background:#35d6ff"></i><span>Kinetic #35D6FF</span></div>
+          <div class="swatch"><i style="background:#b18cff"></i><span>Ecto #B18CFF</span></div>
+          <div class="swatch"><i style="background:#ffd23f"></i><span>Armor #FFD23F</span></div>
+        </div>
+
+        <div class="type-spec">
+          <div class="type-row type-row--display"><b>Aa</b><span>Chakra Petch · Display 700</span></div>
+          <div class="type-row type-row--h2"><b>Aa</b><span>Chakra Petch · Heading 600</span></div>
+          <div class="type-row type-row--body"><b>Aa</b><span>Manrope · Body 400–600</span></div>
+          <div class="type-row type-row--mono"><b>AA / 01</b><span>IBM Plex Mono · Telemetry 500</span></div>
+        </div>
+
+        <div class="principle-grid">
+          <div class="principle"><b>01 / Signal</b><h4>One accent, everywhere</h4><p>Each alien owns a colour token used across its card, dossier, stats and transitions.</p></div>
+          <div class="principle"><b>02 / Motion</b><h4>Transitions explain state</h4><p>The warp tells you a page is a transformation. The dial tells you a form is selected.</p></div>
+          <div class="principle"><b>03 / Density</b><h4>Telemetry, not clutter</h4><p>Mono labels and hairline rules carry detail without competing with the display type.</p></div>
+          <div class="principle"><b>04 / Access</b><h4>Works without theatre</h4><p>Keyboard focus, skip link, reduced-motion support and readable contrast at every size.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:1px solid var(--line)">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div class="section-head__copy">
+          <span class="eyebrow">Project pack // deliverables</span>
+          <h2 class="h2">The paperwork <span class="stroke">is in the archive.</span></h2>
+        </div>
+        <p class="section-head__aside">
+          The build ships with a PRD, implementation plan, presentation deck and PDF exports.
+          Everything a judge or collaborator needs to understand the system.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <a class="mode-card" href="docs/PRD.md" style="--accent:#a3ff12" download>
+          <span class="mode-card__top"><span class="mode-card__index">DOC / 01</span><span class="mode-card__state"><i></i>Markdown</span></span>
+          <h3>Product requirements</h3><span class="mode-card__label">PRD</span>
+          <p>Problem statement, audience, scope, page architecture, feature requirements and success metrics.</p>
+          <span class="mode-card__specs"><span>Scope</span><span>Personas</span><span>Requirements</span></span>
+        </a>
+        <a class="mode-card" href="docs/IMPLEMENTATION_PLAN.md" style="--accent:#35d6ff" download>
+          <span class="mode-card__top"><span class="mode-card__index">DOC / 02</span><span class="mode-card__state"><i></i>Markdown</span></span>
+          <h3>Implementation plan</h3><span class="mode-card__label">Build plan</span>
+          <p>Architecture, data model, sprint breakdown, QA checklist, performance and deployment notes.</p>
+          <span class="mode-card__specs"><span>Sprints</span><span>Architecture</span><span>QA</span></span>
+        </a>
+        <a class="mode-card" href="BEN10_Omniverse_Protocol_Deck.pptx" style="--accent:#ff6a2c" download>
+          <span class="mode-card__top"><span class="mode-card__index">DOC / 03</span><span class="mode-card__state"><i></i>PowerPoint</span></span>
+          <h3>Presentation deck</h3><span class="mode-card__label">PPTX</span>
+          <p>Judge-ready pitch: concept, problem, solution, page tour, design system and roadmap.</p>
+          <span class="mode-card__specs"><span>10 slides</span><span>Editable</span><span>PDF included</span></span>
+        </a>
+      </div>
+
+      <div class="between" style="margin-top:28px;flex-wrap:wrap;gap:16px">
+        <span class="mono" style="color:var(--muted-2)">Deliverables // PRD · implementation plan · deck · PDF</span>
+        <a class="link-arrow" href="docs/PRD.pdf" download>Download the PRD PDF
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="cta reveal">
+        <span class="cta__corner cta__corner--tl"></span>
+        <span class="cta__corner cta__corner--tr"></span>
+        <span class="cta__corner cta__corner--bl"></span>
+        <span class="cta__corner cta__corner--br"></span>
+        <div class="cta__inner">
+          <span class="eyebrow">Back to the universe</span>
+          <h2 class="display" style="margin-top:14px">Go <span class="outline">transform.</span></h2>
+          <p>The archive is open. Ten dossiers, fifty-five forms, one watch.</p>
+          <div class="cta__actions">
+            <a class="btn btn--solid" href="aliens.html" data-warp="Alien Archive"><span>Open the archive</span></a>
+            <a class="btn btn--ghost" href="index.html" data-warp="Home"><span>Return home</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/photos.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/render-pages.js"></script>
+</body>
+</html>

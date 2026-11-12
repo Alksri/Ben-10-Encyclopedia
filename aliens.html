@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alien Archive // Ben 10 Omniverse Protocol</title>
+  <meta name="description" content="Ten full Ben 10 alien dossiers with lore, powers, weaknesses, combat stats and Omnitrix entries. Filter the original playlist and open any form.">
+  <meta name="theme-color" content="#050806">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script>try{if(sessionStorage.getItem('b10-warp'))document.documentElement.classList.add('warping');}catch(e){}</script>
+  <noscript><style>html.warping body{opacity:1!important}</style></noscript>
+</head>
+<body data-page="aliens" data-root="">
+
+<main id="main">
+  <section class="page-hero">
+    <span class="page-hero__ghost" aria-hidden="true">Archive</span>
+    <div class="shell page-hero__grid">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-warp="Home">Home</a><i></i><b>Alien archive</b>
+        </nav>
+        <span class="eyebrow">Plumber database // original playlist</span>
+        <h1 class="page-title" style="margin-top:16px">Alien<br><span class="accent">archive.</span></h1>
+        <p class="page-hero__lead">
+          Ten forms. Ten full dossiers. Each entry covers origin, power set, failure modes,
+          combat telemetry and the exact Omnitrix sample record. Filter the playlist, scan the
+          grid, and slam the dial on any card.
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <div class="page-hero__stats">
+          <div class="page-hero__stat"><span>Full dossiers</span><b>10</b></div>
+          <div class="page-hero__stat"><span>Forms indexed</span><b>55<em>+</em></b></div>
+          <div class="page-hero__stat"><span>Timeline eras</span><b>05</b></div>
+          <div class="page-hero__stat"><span>Watch marks</span><b>04</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <div class="shell toolbar__inner">
+      <div class="filters" id="archive-filters" aria-label="Filter aliens"></div>
+      <label class="toolbar__search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <input id="archive-input" type="text" placeholder="Filter forms…" autocomplete="off" aria-label="Filter aliens">
+      </label>
+      <span class="archive-count" id="archive-count"><b>10</b> / 10 forms</span>
+    </div>
+  </div>
+
+  <section class="archive-section">
+    <div class="shell">
+      <div class="archive-grid archive-grid--uniform" id="alien-grid"></div>
+
+      <div class="between" style="margin-top:40px;flex-wrap:wrap;gap:16px">
+        <span class="mono" style="color:var(--muted-2)">Archive // 001–010 // complete records</span>
+        <a class="link-arrow" href="search.html" data-warp="Search">Need a different form? Search all 55+
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="cta reveal">
+        <span class="cta__corner cta__corner--tl"></span>
+        <span class="cta__corner cta__corner--tr"></span>
+        <span class="cta__corner cta__corner--bl"></span>
+        <span class="cta__corner cta__corner--br"></span>
+        <div class="cta__inner">
+          <span class="eyebrow">Beyond the original ten</span>
+          <h2 class="display" style="margin-top:14px">The archive is <span class="outline">bigger.</span></h2>
+          <p>Alien Force, Ultimate Alien, Omniverse and the reboot are all indexed. Search by name, species, planet or even a typo.</p>
+          <div class="cta__actions">
+            <a class="btn btn--solid" href="search.html" data-warp="Search"><span>Open universal search</span></a>
+            <a class="btn btn--ghost" href="omnitrix.html" data-warp="Omnitrix"><span>Inspect the watch</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/photos.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/render-pages.js"></script>
+</body>
+</html>

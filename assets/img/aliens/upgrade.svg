@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Original stylized portrait of Upgrade, a Galvanic Mechamorph of black liquid metal and green circuitry">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="68%">
+      <stop offset="0" stop-color="#062a12"/><stop offset=".5" stop-color="#05100a"/><stop offset="1" stop-color="#040708"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a4a44"/><stop offset=".35" stop-color="#151d1b"/><stop offset=".7" stop-color="#0a0f0e"/><stop offset="1" stop-color="#020403"/>
+    </linearGradient>
+    <linearGradient id="metal2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3733"/><stop offset="1" stop-color="#080c0b"/>
+    </linearGradient>
+    <linearGradient id="circuit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f5a2a"/><stop offset=".5" stop-color="#5cff9d"/><stop offset="1" stop-color="#c9ffd9"/>
+    </linearGradient>
+    <radialGradient id="eye" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#f2fff5"/><stop offset=".35" stop-color="#9dffbe"/><stop offset=".75" stop-color="#3dff7e"/><stop offset="1" stop-color="#0c8a3a"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <g stroke="#5cff9d" stroke-width="1" opacity=".07"><path d="M0 600h800M0 690h800M130 0v800M670 0v800"/></g>
+  <ellipse cx="400" cy="400" rx="280" ry="270" fill="#5cff9d" opacity=".1" filter="url(#soft)"/>
+
+  <!-- liquid shoulders -->
+  <path d="M232 800c0-128 34-210 106-244l62-26 62 26c72 34 106 116 106 244Z" fill="url(#metal)"/>
+  <path d="M232 800c0-128 34-210 106-244l24-10c-40 66-50 152-48 254Z" fill="#020403" opacity=".7"/>
+  <path d="M568 800c0-128-34-210-106-244l-24-10c40 66 50 152 48 254Z" fill="#020403" opacity=".5"/>
+
+  <!-- circuitry over torso -->
+  <g fill="none" stroke="url(#circuit)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M292 760l40-70 34 18 34-44 34 44 34-18 40 70" stroke-width="3" opacity=".9"/>
+    <path d="M320 690v-60l46-26 34 20 34-20 46 26v60" stroke-width="2.5" opacity=".7"/>
+    <path d="M400 604v-40" stroke-width="3" opacity=".8"/>
+    <path d="M262 730l22-52 30 12M538 730l-22-52-30 12" stroke-width="2" opacity=".6"/>
+    <path d="M352 646h96M336 676h128" stroke-width="1.5" opacity=".45"/>
+  </g>
+  <g fill="#9dffbe" opacity=".9" filter="url(#glow)">
+    <circle cx="400" cy="564" r="5"/><circle cx="332" cy="630" r="3.5"/><circle cx="468" cy="630" r="3.5"/>
+    <circle cx="366" cy="708" r="3"/><circle cx="434" cy="708" r="3"/><circle cx="292" cy="760" r="3"/>
+  </g>
+
+  <!-- neck -->
+  <path d="M352 400h96v106h-96Z" fill="url(#metal2)"/>
+
+  <!-- head: smooth helmet dome -->
+  <path d="M400 124c-80 0-134 56-134 132 0 54 22 100 58 128l22 18h108l22-18c36-28 58-74 58-128 0-76-54-132-134-132Z" fill="url(#metal)"/>
+  <path d="M400 140c-66 0-118 46-118 116 14-50 54-80 118-80 28 0 52 6 72 18-20-34-42-54-72-54Z" fill="#7b8f88" opacity=".18"/>
+
+  <!-- head circuitry -->
+  <g fill="none" stroke="url(#circuit)" stroke-linecap="round">
+    <path d="M288 258c-12 34-6 74 18 102l24 26" stroke-width="2.5" opacity=".75"/>
+    <path d="M512 258c12 34 6 74-18 102l-24 26" stroke-width="2.5" opacity=".75"/>
+    <path d="M310 190l30 18 18-26M490 190l-30 18-18-26" stroke-width="2" opacity=".5"/>
+    <path d="M400 150v34M376 166h48" stroke-width="2" opacity=".55"/>
+  </g>
+
+  <!-- central eye -->
+  <ellipse cx="400" cy="300" rx="78" ry="52" fill="#020604" stroke="#1d3a2a" stroke-width="4"/>
+  <ellipse cx="400" cy="300" rx="58" ry="38" fill="url(#eye)" filter="url(#glow)"/>
+  <ellipse cx="400" cy="300" rx="20" ry="28" fill="#04130a"/>
+  <ellipse cx="388" cy="288" rx="9" ry="12" fill="#eaffef" opacity=".85"/>
+  <path d="M322 300h-26M478 300h26" stroke="#5cff9d" stroke-width="2" opacity=".5"/>
+
+  <!-- mouth seam -->
+  <path d="M348 386c34 14 70 14 104 0" stroke="#1d3a2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <g stroke="#5cff9d" stroke-width="2" opacity=".55"><path d="M366 398v10M400 402v10M434 398v10"/></g>
+
+  <!-- floating tech particles -->
+  <g fill="#5cff9d" opacity=".7">
+    <rect x="182" y="292" width="8" height="8" transform="rotate(45 186 296)"/>
+    <rect x="606" y="352" width="6" height="6" transform="rotate(45 609 355)"/>
+    <rect x="622" y="238" width="5" height="5" transform="rotate(45 624 240)"/>
+    <rect x="170" y="430" width="5" height="5" transform="rotate(45 172 432)"/>
+  </g>
+</svg>

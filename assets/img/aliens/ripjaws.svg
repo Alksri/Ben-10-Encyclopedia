@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Original stylized portrait of Ripjaws, a Piscciss Volann shark-like aquatic alien with a glowing lure">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="68%">
+      <stop offset="0" stop-color="#062238"/><stop offset=".5" stop-color="#060e16"/><stop offset="1" stop-color="#040708"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5aa8e8"/><stop offset=".45" stop-color="#2b6fae"/><stop offset="1" stop-color="#123a5e"/>
+    </linearGradient>
+    <linearGradient id="skinDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d527f"/><stop offset="1" stop-color="#0a2438"/>
+    </linearGradient>
+    <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe6f5"/><stop offset="1" stop-color="#7d9fb8"/>
+    </linearGradient>
+    <radialGradient id="lure" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#eaffff"/><stop offset=".4" stop-color="#8ff0ff"/><stop offset="1" stop-color="#2fb6e0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <g stroke="#3a86ff" stroke-width="1" opacity=".07"><path d="M0 610h800M0 700h800M120 0v800M680 0v800"/></g>
+  <ellipse cx="400" cy="420" rx="280" ry="270" fill="#2b8fd6" opacity=".13" filter="url(#soft)"/>
+
+  <!-- water caustics -->
+  <g stroke="#8ff0ff" stroke-width="2" fill="none" opacity=".2">
+    <path d="M80 220c50 24 100 24 150 0s100-24 150 0"/>
+    <path d="M420 260c50 24 100 24 150 0s100-24 150 0"/>
+    <path d="M120 500c40 20 80 20 120 0"/>
+  </g>
+
+  <!-- shoulders / fins -->
+  <path d="M232 800c4-130 38-212 112-244l56-22 56 22c74 32 108 114 112 244Z" fill="url(#skin)"/>
+  <path d="M232 800c4-130 38-212 112-244l20-8c-36 66-46 152-44 252Z" fill="#0a2438" opacity=".55"/>
+  <path d="M568 800c-4-130-38-212-112-244l-20-8c36 66 46 152 44 252Z" fill="#0a2438" opacity=".4"/>
+  <path d="M208 600l-88-52 34 92-46 44 96 12Z" fill="url(#skinDark)"/>
+  <path d="M592 600l88-52-34 92 46 44-96 12Z" fill="url(#skinDark)"/>
+
+  <!-- chest / gills -->
+  <path d="M330 620c46 20 94 20 140 0l-14 70c-38 16-74 16-112 0Z" fill="url(#belly)" opacity=".85"/>
+  <g stroke="#0a2438" stroke-width="4" fill="none" opacity=".55">
+    <path d="M344 646v44M366 640v54M434 640v54M456 646v44"/>
+  </g>
+  <path d="M400 560l22 16v34l-22 16-22-16v-34Z" fill="none" stroke="#8ff0ff" stroke-width="3" opacity=".65"/>
+
+  <!-- neck -->
+  <path d="M352 400h96v106h-96Z" fill="url(#skinDark)"/>
+
+  <!-- head -->
+  <path d="M400 128c-78 0-132 52-132 126 0 46 16 84 44 112l32 30 56 26 56-26 32-30c28-28 44-66 44-112 0-74-54-126-132-126Z" fill="url(#skin)"/>
+  <path d="M400 144c-66 0-116 44-118 110 18-46 58-74 118-74 30 0 54 8 72 22-20-36-40-58-72-58Z" fill="#bfe4ff" opacity=".18"/>
+
+  <!-- side fins / ears -->
+  <path d="M270 286l-74-26 38 62-52 20 88 34Z" fill="url(#skinDark)"/>
+  <path d="M530 286l74-26-38 62 52 20-88 34Z" fill="url(#skinDark)"/>
+  <g stroke="#8ff0ff" stroke-width="2" opacity=".35"><path d="M238 290l-26 34M562 290l26 34"/></g>
+
+  <!-- brow -->
+  <path d="M302 292l74-22 24 10 24-10 74 22-14 24-84-16-84 16Z" fill="#0a2438" opacity=".85"/>
+
+  <!-- eyes -->
+  <g fill="#f2ffff">
+    <path d="M322 318c18-12 40-12 54 0-12 16-40 16-54 0Z"/>
+    <path d="M478 318c-18-12-40-12-54 0 12 16 40 16 54 0Z"/>
+  </g>
+  <g fill="#0a2438"><circle cx="348" cy="320" r="6"/><circle cx="452" cy="320" r="6"/></g>
+
+  <!-- snout + teeth -->
+  <path d="M330 360c20 20 46 30 70 30s50-10 70-30l-16 54-54 30-54-30Z" fill="#123a5e"/>
+  <path d="M340 388c40 18 80 18 120 0" stroke="#0a2438" stroke-width="4" fill="none"/>
+  <g fill="#f4fbff">
+    <path d="M346 390l12 22 10-18Z"/><path d="M372 396l12 24 10-20Z"/><path d="M400 400l12 24 12-24Z"/>
+    <path d="M430 396l10 20 12-24Z"/><path d="M456 390l10 18 12-22Z"/>
+  </g>
+  <g fill="#f4fbff" opacity=".8">
+    <path d="M356 436l10-18 12 20Z"/><path d="M384 442l10-20 12 22Z"/>
+    <path d="M418 442l12-22 10 20Z"/><path d="M446 436l12-20 10 18Z"/>
+  </g>
+
+  <!-- lure -->
+  <path d="M400 130c-6-34 10-58 34-68" stroke="#8ff0ff" stroke-width="5" fill="none" opacity=".65"/>
+  <circle cx="438" cy="56" r="30" fill="url(#lure)" filter="url(#glow)"/>
+  <circle cx="438" cy="56" r="10" fill="#eaffff"/>
+  <circle cx="434" cy="52" r="4" fill="#ffffff"/>
+
+  <!-- bubbles -->
+  <g fill="none" stroke="#8ff0ff" opacity=".4">
+    <circle cx="196" cy="330" r="8"/><circle cx="172" cy="288" r="4"/>
+    <circle cx="618" cy="260" r="6"/><circle cx="646" cy="312" r="3"/>
+    <circle cx="592" cy="470" r="5"/><circle cx="218" cy="500" r="4"/>
+  </g>
+</svg>

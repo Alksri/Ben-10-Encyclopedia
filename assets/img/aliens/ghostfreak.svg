@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Original stylized portrait of Ghostfreak, an Ectonurite wrapped in a tattered pale membrane with one green eye">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#22103a"/><stop offset=".5" stop-color="#0c0814"/><stop offset="1" stop-color="#040507"/>
+    </radialGradient>
+    <linearGradient id="membrane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2eef7"/><stop offset=".4" stop-color="#c9c2d6"/><stop offset=".8" stop-color="#8d86a0"/><stop offset="1" stop-color="#4e4860"/>
+    </linearGradient>
+    <linearGradient id="membrane2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9b0cc"/><stop offset="1" stop-color="#4b4560"/>
+    </linearGradient>
+    <radialGradient id="eye" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#f6fff0"/><stop offset=".3" stop-color="#b6ff9e"/><stop offset=".7" stop-color="#5fdc4a"/><stop offset="1" stop-color="#1e6b18"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b18cff" stop-opacity=".45"/><stop offset="1" stop-color="#b18cff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <g stroke="#b18cff" stroke-width="1" opacity=".07"><path d="M0 610h800M0 700h800M120 0v800M680 0v800"/></g>
+  <ellipse cx="400" cy="410" rx="290" ry="280" fill="url(#aura)"/>
+
+  <!-- wisps -->
+  <g stroke="#b18cff" stroke-width="2" fill="none" opacity=".35" stroke-linecap="round">
+    <path d="M150 300c40 30 30 70 70 90s50 60 30 90"/>
+    <path d="M650 280c-40 34-26 74-64 96s-44 64-22 96"/>
+    <path d="M196 560c30-14 54-6 74 20s44 34 74 24"/>
+    <path d="M604 560c-30-14-54-6-74 20s-44 34-74 24"/>
+  </g>
+
+  <!-- cloak -->
+  <path d="M400 168c-92 0-150 66-150 158 0 60 22 108 58 150l-8 324h200l-8-324c36-42 58-90 58-150 0-92-58-158-150-158Z" fill="url(#membrane2)" opacity=".92"/>
+  <path d="M400 168c-92 0-150 66-150 158 0 60 22 108 58 150l-8 324h100Z" fill="#e9e4f2" opacity=".16"/>
+
+  <!-- tattered hem -->
+  <path d="M250 640c40 26 60-10 100 14 26 16 50 6 50-18 0 24 24 34 50 18 40-24 60 12 100-14v160H250Z" fill="url(#membrane)"/>
+  <g fill="#0c0814">
+    <path d="M258 660l24 60-30 80h-22Z"/><path d="M320 700l18 50-24 50h-40Z"/>
+    <path d="M470 700l18 50-20 50h-44Z"/><path d="M542 660l26 60-28 80h-24Z"/>
+  </g>
+
+  <!-- chest seam / inner self -->
+  <path d="M400 420v220" stroke="#2b2140" stroke-width="3" opacity=".6"/>
+  <path d="M368 470c20 16 44 16 64 0" stroke="#2b2140" stroke-width="3" fill="none" opacity=".5"/>
+
+  <!-- head / hood -->
+  <path d="M400 152c-70 0-118 50-118 120 0 52 24 92 62 112l56 26 56-26c38-20 62-60 62-112 0-70-48-120-118-120Z" fill="url(#membrane)"/>
+  <path d="M400 152c-70 0-118 50-118 120 0 52 24 92 62 112l56 26V152Z" fill="#f7f4fb" opacity=".22"/>
+  <path d="M400 168c-54 0-98 40-100 96 18-42 52-64 100-64 24 0 44 6 60 18-16-32-34-50-60-50Z" fill="#ffffff" opacity=".25"/>
+
+  <!-- face seam -->
+  <path d="M400 186c-8 40-8 80 0 118s8 66 0 90" stroke="#2b2140" stroke-width="4" fill="none" opacity=".55"/>
+  <path d="M356 250c-14 26-14 56 0 82M444 250c14 26 14 56 0 82" stroke="#2b2140" stroke-width="2" fill="none" opacity=".35"/>
+
+  <!-- single eye -->
+  <ellipse cx="400" cy="292" rx="46" ry="58" fill="#0b0712" stroke="#3b2f52" stroke-width="3"/>
+  <ellipse cx="400" cy="292" rx="34" ry="44" fill="url(#eye)" filter="url(#glow)"/>
+  <ellipse cx="400" cy="292" rx="9" ry="34" fill="#08120a"/>
+  <ellipse cx="390" cy="276" rx="8" ry="12" fill="#f4fff0" opacity=".9"/>
+
+  <!-- mouth -->
+  <path d="M368 382c22 12 42 12 64 0-8 20-20 30-32 30s-24-10-32-30Z" fill="#1a1326" opacity=".8"/>
+  <path d="M376 388h48" stroke="#d9d2e6" stroke-width="3" opacity=".5"/>
+
+  <!-- chains / sigil -->
+  <g fill="none" stroke="#b18cff" stroke-width="2" opacity=".45">
+    <path d="M252 460c-30 40-30 90 0 130M548 460c30 40 30 90 0 130"/>
+    <circle cx="400" cy="556" r="18"/>
+    <path d="M400 538v36M382 556h36"/>
+  </g>
+</svg>

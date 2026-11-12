@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Omniverse // Ben 10 Omniverse Protocol</title>
+  <meta name="description" content="Five eras, four Omnitrix marks, six factions — the complete Ben 10 timeline from the original series through Alien Force, Ultimate Alien, Omniverse and the reboot.">
+  <meta name="theme-color" content="#050806">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script>try{if(sessionStorage.getItem('b10-warp'))document.documentElement.classList.add('warping');}catch(e){}</script>
+  <noscript><style>html.warping body{opacity:1!important}</style></noscript>
+</head>
+<body data-page="universe" data-root="">
+
+<main id="main">
+  <section class="page-hero">
+    <span class="page-hero__ghost" aria-hidden="true">Omniverse</span>
+    <div class="shell page-hero__grid">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-warp="Home">Home</a><i></i><b>The Omniverse</b>
+        </nav>
+        <span class="eyebrow">Timeline // 2005 → present</span>
+        <h1 class="page-title" style="margin-top:16px">The<br><span class="accent">Omniverse.</span></h1>
+        <p class="page-hero__lead">
+          A road trip, a war, an evolution, a multiverse. Five eras, four watch marks and a cast
+          that kept expanding. This is the whole lineage in one place — from the prototype dial
+          to the rebuilt Omniverse watch.
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <div class="page-hero__stats">
+          <div class="page-hero__stat"><span>Timeline eras</span><b>05</b></div>
+          <div class="page-hero__stat"><span>Watch marks</span><b>04</b></div>
+          <div class="page-hero__stat"><span>Factions mapped</span><b>06</b></div>
+          <div class="page-hero__stat"><span>Indexed forms</span><b>55<em>+</em></b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div class="section-head__copy">
+          <span class="eyebrow">Chronology // five eras</span>
+          <h2 class="h2">A universe, <span class="stroke">era by era.</span></h2>
+        </div>
+        <p class="section-head__aside">
+          Each era introduced a new device, a new playlist and a bigger threat. The timeline is
+          the spine of the whole archive.
+        </p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:1px solid var(--line)">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div class="section-head__copy">
+          <span class="eyebrow">Power map // six factions</span>
+          <h2 class="h2">Every side <span class="stroke">has an agenda.</span></h2>
+        </div>
+        <p class="section-head__aside">
+          Plumbers, Highbreed, Incurseans, Galvans, the Anur system and the Celestialsapiens.
+          The universe is mostly people arguing about what to do with it.
+        </p>
+      </div>
+      <div class="faction-grid" id="faction-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:1px solid var(--line)">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div class="section-head__copy">
+          <span class="eyebrow">Hardware // watch lineage</span>
+          <h2 class="h2">Four marks. <span class="stroke">Same wrist.</span></h2>
+        </div>
+        <p class="section-head__aside">
+          The prototype was a mystery. The recalibrated watch was a reset. The Ultimatrix was a
+          risk. The Omniverse watch was the answer.
+        </p>
+      </div>
+      <div class="device-row" id="device-row"></div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="cta reveal">
+        <span class="cta__corner cta__corner--tl"></span>
+        <span class="cta__corner cta__corner--tr"></span>
+        <span class="cta__corner cta__corner--bl"></span>
+        <span class="cta__corner cta__corner--br"></span>
+        <div class="cta__inner">
+          <span class="eyebrow">The database is open</span>
+          <h2 class="display" style="margin-top:14px">Meet the <span class="outline">forms.</span></h2>
+          <p>Ten full dossiers from the original playlist, plus a searchable archive of every era.</p>
+          <div class="cta__actions">
+            <a class="btn btn--solid" href="aliens.html" data-warp="Alien Archive"><span>Enter the archive</span></a>
+            <a class="btn btn--ghost" href="encyclopedia.html" data-warp="Encyclopedia"><span>Open the encyclopedia</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/photos.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/render-pages.js"></script>
+</body>
+</html>
